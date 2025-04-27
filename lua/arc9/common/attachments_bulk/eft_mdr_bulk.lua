@@ -28,7 +28,7 @@ ATT.Category = {"eft_mdr762_barrel"}
 ATT.Attachments = {
     {
         PrintName = "Muzzle",
-        Category = "eft_ar10_muzzle",
+        Category = {"eft_ar10_muzzle", "eft_gemtechmount"},
         Pos = Vector(-15.75, 0, 0.01),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),

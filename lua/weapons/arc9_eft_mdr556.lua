@@ -14,23 +14,28 @@ SWEP.DefaultElements = {"mdr_556"} -- owo
 
 SWEP.Ammo = "smg1"
 
+SWEP.StandardPresets = {
+    "[HHS-1 Tan]XQAAAQB5AgAAAAAAAAA9iIIiM7tuo1AtT00OeFD8dwN9VaB5IV7sXUPNjigntarbs2AkmiQQfgkMtwLdy9wcobtKN8VIt7BFNhGV2EQ60pIrTBulvhRDK2goWcVfmyGreZlB4LTtvnUEwpcS1apKIkPh6vWZfFh2T5oB2Rz5C7QSwJHGaqhKmi+qntuNtg08GoifTIOzAAikEMpsaXn9N5jOIY7T5XVNCfmw1TyYJGt+b9M15KEZWEtkvnWVmh6qAskSg+QPMvz8Ykml4z6Py8wTgdRzASgGyGR6X1u9IwrFWpF/EiDMkjmMBAbGxzoH/YKgItLDbYLokmtY0r2SDs8k5fHd7ybui75suBwfJ/TnWZipTgA=",
+    "[ONE]XQAAAQAQAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD8dwN9VaB5IV7sXUPNjcizTBbVlYIWPm+v6sghMsj5efhXJqADEkp/Yc2Ufbiz6pD9HSmClgq3BQoaciNpNrwvlSLfBHR4Meak58jn1kEYeAcmenDORAHWvDkNKj5pyB10FKj1AibZbXTwvWwvR7jcKYJA02KhJyz27tt647vtb8Pr5QA19rGqlS1V+TizPxTU7lpOY4SExUvQqE7TT5nn9nc/gqIw3PcMnKtKWbrEOM/tbbbigUoHpka6lAfg7P2Rl4MJKO2Sf3qxxiY=",
+    false,
+}
 
-SWEP.Recoil = 0.8 -- general multiplier of main recoil
+SWEP.Recoil = 0.9 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 2.75  -- up recoil
-SWEP.RecoilSide = 0.8 -- sideways recoil
+SWEP.RecoilUp   = 2.5  -- up recoil
+SWEP.RecoilSide = 0.6 -- sideways recoil
 SWEP.RecoilRandomUp   = 0.9 -- random up/down
 SWEP.RecoilRandomSide = 0.65   -- random left/right
 
-SWEP.RecoilAutoControl = 6 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 6.5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
 SWEP.VisualRecoil = 0.7 -- general multiplier for it
 
 SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 0.5   --   when fullautoing
+SWEP.VisualRecoilUp                   = 0.65   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.05   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
 SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun

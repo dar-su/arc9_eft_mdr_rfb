@@ -19,10 +19,11 @@ SWEP.Trivia = {
     [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2017"
 }
 
--- SWEP.StandardPresets = {
---     "[A3 CIV]XQAAAQBfAQAAAAAAAAA9iIIiM7tuo1AtT00OeFDsVU+tnMnW9ZeiddySUmIu7C+UsFaM11Cx2EhOgx4CMxwqQD+bkg/Dr72/4bycjqlN+bmAR4YN2E9oKMpksCcz3byDbSfgK2yI8mZ048WgNIglE8rAsdQA1V12iWfUmz7MbN0dNevvDlxpBmQgyf1nj/iAUBoe2IjaazRzmicqaxqZ4Sk=",
---     "[A3 CQB]XQAAAQCQAQAAAAAAAAA9iIIiM7tuo1AtT00OeFDsVU+tnMnW9ZeiddySUmIu7C+UsFaM11Cx2EhOgx4CMxwqQD+bkg/Dr72/4bycjqlN+bmAR4YN2E9oKMRY90kA7PFwj+bJuFBRDnQyZxrpbNPJIdSlUsIzG0LEi97lPI7j+I1XaRKVeBet7bdFCrVWK50XpDtpdQAeDWfBZfO3Ei0uP9+yZW+si7klgKk+Lnr4ndTKMsKvA8IiPP7M9R7y7vI="
--- }
+SWEP.StandardPresets = {
+    "[Killtube]XQAAAQCCAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD8dwN9VaB5IV7sV3UUwbFEQ6I9mAu9aVfsrq6jvHZspJJL9m+0EvjeYzY1UdUNngcr9LWGjquvxkUYvI6SlQAhgD7wleBAer0gF9hlpYQY+MkEmwaKJIlMVETpjFbRZedZKDTfLyU7FyQoc1tPHzcPkwqUO24WsKiWQt9tEgLYUksQ5NdELa75aVlyRU7MRtUY5GnSvtecYBGqlFm9FXx3RrwsF100fAeI5oCJxLOV19OzNAICcH4zaikDXZVjaUODujL66cTmG59z8dzjEHvfT3ktYe9/33UW61u598+DgngQwxJFNqU36++Nw+xTqNaWrSZLgaU/aN0A",
+    "[T.O 2k24]XQAAAQBPAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD8dwN9VaB5IV7sXUPNjigntarbs2AkmiQQfgkMtwLdy9wcobtKM/Lj74BTBdpotxpfJikYonYC9TpuHmXk8FZQaKKrTWp8p/uExptJq+uY81T7uKbWJl6fwKC/e4J2NFoed/424qYY6JinSqmUjkVj24f7N8KTZGpZu/tPMSv5m8QOPDMgo3ffY5NWbWKxxjALq6LT1XSk/Zia/43+iTir+gRCj3rWkjibz76UhgaMVkA8A5JnWqfz4NARoTmEm4AOfE8Z6syGz8Yw+LBqLuU2YyJ9iz3UPunGqqGNmO3f8o8JrjvF6pxmJiUZpCQOgJG0AA==",
+    "[HCO]XQAAAQAqAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD8dwN9VaB5IV7sXUPNjcizTBbVlYIWPm+v6sgjHY+Z/SP+B1su3J3Wb2RkJEsG04b2iLl7EAUZupMXnNWFbsX1GKSaw8FNYuKu07ge4WCP9IHQ1dDgSRjvxe9bKYOMVGUDCO7grXx3OFJG0cxCcLJpoaPFKdSTnWSonVHlZALkuGoANPAxBHyzyBe47BHGHA1GPVWXRYQCu2PPAXReAzcgjbXfAoKzOtZ35jEVCDv6NJV/MJXtiJlbUradj5JCNKsE276MouzDJCmBzTSXCEUfpsqQ/NbNpI0VKT0O95Luw4gX4EIZEVGe",
+}
 
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_mdr.mdl"
@@ -46,7 +47,7 @@ SWEP.IronSights = {
     ViewModelFOV = 54
 }
 
-SWEP.ActivePos = Vector(-0.7, -2.6, -.35)
+SWEP.ActivePos = Vector(-0.7, -4.0, -0.3)
 SWEP.CustomizePos = Vector(15, 25, 4)
 SWEP.CustomizeSnapshotFOV = 95
 SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
@@ -68,22 +69,22 @@ SWEP.Slot = 2
 ------------------------- |||           Recoil            ||| -------------------------
 
 
-SWEP.Recoil = 1.2 -- general multiplier of main recoil
+SWEP.Recoil = 0.9 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 2.75  -- up recoil
-SWEP.RecoilSide = 0.6 -- sideways recoil
+SWEP.RecoilUp   = 1.75  -- up recoil
+SWEP.RecoilSide = 0.9 -- sideways recoil
 SWEP.RecoilRandomUp   = 2.1 -- random up/down
 SWEP.RecoilRandomSide = 0.6   -- random left/right
 
-SWEP.RecoilAutoControl = 3.5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 4.5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 0.95 -- general multiplier for it
+SWEP.VisualRecoil = 0.6 -- general multiplier for it
 
 SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
 SWEP.VisualRecoilUp                   = 0.5   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.1   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
 SWEP.VisualRecoilPunch = 0.5 -- How far back visrec moves the gun

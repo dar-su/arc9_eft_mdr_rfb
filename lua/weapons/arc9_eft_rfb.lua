@@ -46,7 +46,7 @@ SWEP.IronSights = {
     ViewModelFOV = 54
 }
 
-SWEP.ActivePos = Vector(-0.7, -4.3, -.35)
+SWEP.ActivePos = Vector(-0.7, -3.6, -0.2)
 SWEP.CustomizePos = Vector(16, 25, 4)
 SWEP.CustomizeSnapshotFOV = 95
 SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
@@ -68,29 +68,29 @@ SWEP.ClipSize = 0 -- no single reloads
 
 ------------------------- |||           Recoil            ||| -------------------------
 
-SWEP.Recoil = 0.8 -- general multiplier of main recoil
+SWEP.Recoil = 1.0 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 2.75  -- up recoil
-SWEP.RecoilSide = 0.6 -- sideways recoil
-SWEP.RecoilRandomUp   = 2.1 -- random up/down
-SWEP.RecoilRandomSide = 0.6   -- random left/right
+SWEP.RecoilSide = 0.5 -- sideways recoil
+SWEP.RecoilRandomUp   = 0.9 -- random up/down
+SWEP.RecoilRandomSide = 0.4   -- random left/right
 
-SWEP.RecoilAutoControl = 3.5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 0.75 -- general multiplier for it
+SWEP.VisualRecoil = 1.5 -- general multiplier for it
 
-SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 0.5   --   when fullautoing
+SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.3   -- up/down tilt when semi/bursts
+SWEP.VisualRecoilUp                   = 0.4   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
 SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 0.5 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = -3 -- same but in sights only
+SWEP.VisualRecoilPunch = 0.35 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
 
-SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
-SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
+SWEP.VisualRecoilDampingConst = 120  -- spring settings, this is speed of visrec
+SWEP.VisualRecoilSpringPunchDamping = 4.5 -- the less this is the more wobbly gun moves
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
@@ -103,10 +103,10 @@ SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 3 -- how many shots for switch to ful
 
 SWEP.RecoilKick = 0.75 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 19, -1.5)
-SWEP.SubtleVisualRecoil = 1.5
-SWEP.SubtleVisualRecoilDirection = 2.5
-SWEP.SubtleVisualRecoilSpeed = 0.75
+SWEP.VisualRecoilCenter = Vector(4.28, 22, -1.5)
+SWEP.SubtleVisualRecoil = 1.6
+SWEP.SubtleVisualRecoilDirection = 2
+SWEP.SubtleVisualRecoilSpeed = 0.86
 
 ------------------------- |||           Damage            ||| -------------------------
 
@@ -752,18 +752,14 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
         Installed = "eft_rfb_mount_upper",
-        -- SubAttachments = {
-        --     {
-        --         Installed = "eft_aug_barrel_20",
-        --         SubAttachments = {
-        --             { Installed = "eft_muzzle_aug_fh_a3" },
-        --             { Installed = "eft_aug_grip" }
-        --         }
-        --     },
-        --     {
-        --         Installed = "eft_aug_scope_m1",
-        --     }
-        -- }
+        SubAttachments = {
+            {
+                Installed = "eft_rearsight_kac",
+            },
+            {
+                Installed = "eft_frontsight_kac",
+            }
+        }
     },
     {
         PrintName = "Barrel",
