@@ -69,7 +69,7 @@ ATT.Category = {"eft_mp443_tac"}
 ATT.Attachments = {
     {
         PrintName = "Tactical",
-        Category = {"eft_tactical_pistol"},
+        Category = {"eft_tactical_pistol", "eft_um3"},
         Pos = Vector(-0.6, 0, -0.2),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.5),
