@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "CR 200DS 9x19"
-SWEP.Description = [[The Rhino revolvers, manufactured by the Italian company Armi Chiappa, are distinguished by revolutionary patented design and construction with an unusual barrel arrangement for revolvers opposite the lower drum chamber. The short size "pocket" model with a 2 inch barrel chambered in 9x19mm. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_cr200ds")
+SWEP.Description = "eft_weapon_cr200ds_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_revol")
+SWEP.Class = "eft_class_weapon_revol"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Armi Chiappa",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"]= ARC9:GetPhrase("eft_trivia_act_blow"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_italy"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2009"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_chiappa",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"]= "eft_trivia_act_revolver",
+    ["eft_trivia_country4"] = "eft_trivia_country_italy",
+    ["eft_trivia_year5"] = "2009"
 }
 
 SWEP.StandardPresets = false 

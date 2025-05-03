@@ -7,8 +7,8 @@ SWEP.Base = "arc9_eft_mdr"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "DT MDR 5.56"
-SWEP.Description = [[The MDR 5.56x45 bullpup assault rifle, designed and manufactured by Desert Tech LLC. A modular multi-caliber weapon with a compact bullpup layout intended for use by police and military special operations. Barrel lengths and calibers can be changed by the end-user within minutes with a minimum amount of tools. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mdr556_alt")
+SWEP.Description = "eft_weapon_mdr556_desc"
 
 SWEP.DefaultElements = {"mdr_556"} -- owo
 

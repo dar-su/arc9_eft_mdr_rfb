@@ -11,12 +11,12 @@ SWEP.Spawnable = file.Exists("arc9/common/attachments_bulk/eft_50ae_357_bulk.lua
 
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "CR 50DS .357"
-SWEP.Description = [[The Rhino revolvers, manufactured by the Italian company Armi Chiappa, are distinguished by revolutionary patented design and construction with an unusual barrel arrangement for revolvers opposite the lower drum chamber. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_cr50ds")
+SWEP.Description = "eft_weapon_cr50ds_desc"
 
 SWEP.Trivia = {
     _,
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = ".357 Magnum",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_357",
 }
 
 SWEP.DefaultBodygroups = "1200000000000"

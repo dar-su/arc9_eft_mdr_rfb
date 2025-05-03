@@ -7,18 +7,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "MP-443 Grach"
-SWEP.Description = [[The PYa MP-443 (Pistolét Yarýgina MP-443 - "Yarygin Pistol MP-443", GRAU Index - 6P35) widely known as "Grach" is a Russian semiautomatic pistol chambered in 9x19 mm. It was designed by Vladimir Yarygin in the 1990s and adopted as a standard sidearm by the Russian military, law enforcement agencies, and special units of the Ministry of Internal Affairs. It features a high capacity magazine and can be equipped with the Zenit B-8 mount to install additional attachments beneath the barrel. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp443")
+SWEP.Description = "eft_weapon_mp443_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
+SWEP.Class = "eft_class_weapon_pist"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "IzhMekh",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"]= ARC9:GetPhrase("eft_trivia_act_recoil"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2003"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_izhevsk",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"]= "eft_trivia_act_recoil",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "2003"
 }
 
 
