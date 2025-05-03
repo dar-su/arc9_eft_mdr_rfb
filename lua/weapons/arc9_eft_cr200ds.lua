@@ -43,7 +43,7 @@ SWEP.IronSights = {
     Magnification = 1.1,
 }
 
-SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
+SWEP.ActivePos = Vector(-0.7, -3.1, -.45)
 SWEP.CustomizePos = Vector(21, 22, 2.7)
 SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeRotateAnchor = Vector(22, -4.34, -4)
@@ -69,13 +69,13 @@ SWEP.HoldTypeSprint = "normal"
 ------------------------- |||           Stats            ||| -------------------------
 
 SWEP.Spread = 9.63 * ARC9.MOAToAcc
-SWEP.RPM = 134
+SWEP.RPM = 450
 SWEP.EFTErgo = 95
 SWEP.BarrelLength = 12
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "DOUBLE A.", PoseParam = 1, Spread = 0.005  },
-    { Mode = 1, PrintName = "SINGLE A.", PoseParam = 2, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelay = false, TriggerStartFireAnim = false, RecoilKickMult = 0.75 },
+    { Mode = 1, PrintName = "DOUBLE A.", PoseParam = 1  },
+    { Mode = 1, PrintName = "SINGLE A.", PoseParam = 0, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelay = false, TriggerStartFireAnim = false, RecoilKickMult = 0.75 },
 }
 
 SWEP.Slot = 1
@@ -83,44 +83,45 @@ SWEP.ReloadInSights = false
 
 ------------------------- |||           Recoil            ||| -------------------------
 
+
 SWEP.Recoil = 1.0 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 6   -- up recoil
-SWEP.RecoilSide = 1.5 -- sideways recoil
+SWEP.RecoilUp   = 3   -- up recoil
+SWEP.RecoilSide = 0.5 -- sideways recoil
 SWEP.RecoilRandomUp   = 0.2 -- random up/down
 SWEP.RecoilRandomSide = 0.2   -- random left/right
 
-SWEP.RecoilAutoControl = 1.7 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 3 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 1 -- general multiplier for it
+SWEP.VisualRecoil = 0.65 -- general multiplier for it
 
-SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 10   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 10   --   when fullautoing
+SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 2   -- up/down tilt when semi/bursts
+SWEP.VisualRecoilUp                   = 2   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
 SWEP.VisualRecoilSide                 = 0.005   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 0.75 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 5 -- same but in sights only
+SWEP.VisualRecoilPunch = -0.3 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 7 -- same but in sights only
 
-SWEP.VisualRecoilDampingConst = 45  -- spring settings, this is speed of visrec
-SWEP.VisualRecoilSpringPunchDamping = 4 -- the less this is the more wobbly gun moves
-SWEP.VisualRecoilSpringMagnitude = 1.25 -- some third element of spring, high values make gun shake asf on low fps
+SWEP.VisualRecoilDampingConst = 200  -- spring settings, this is speed of visrec
+SWEP.VisualRecoilSpringPunchDamping = 9 -- the less this is the more wobbly gun moves
+SWEP.VisualRecoilSpringMagnitude = 2 -- some third element of spring, high values make gun shake asf on low fps
 
-SWEP.VisualRecoilPositionBumpUpHipFire = -0.01 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = 0.01 -- same but in sights
+SWEP.VisualRecoilPositionBumpUpHipFire = -0.1 -- gun will go down each shot by this value
+SWEP.VisualRecoilPositionBumpUp = -0.01 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 3.1 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 0.25 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 15, -4.2)
-SWEP.SubtleVisualRecoil = 0.7
-SWEP.SubtleVisualRecoilHipFire = 1.35
-SWEP.SubtleVisualRecoilDirection = 8
-SWEP.SubtleVisualRecoilSpeed = 0.25
+SWEP.VisualRecoilCenter = Vector(4.28, 15, -1.2)
+SWEP.SubtleVisualRecoil = 0.25
+SWEP.SubtleVisualRecoilHipFire = 7
+SWEP.SubtleVisualRecoilDirection = 3
+SWEP.SubtleVisualRecoilSpeed = 1
 
 ------------------------- |||           Damage            ||| -------------------------
 
@@ -181,7 +182,7 @@ SWEP.Overheat = false
 ------------------------- |||           Minor stuff            ||| -------------------------
 
 SWEP.CamQCA_Mult = 1
-SWEP.MuzzleParticle = "muzzleflash_pistol_deagle"
+SWEP.MuzzleParticle = "muzzleflash_pistol"
 SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/9x19.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells9mm
@@ -215,15 +216,20 @@ SWEP.ShellSmoke = false
 SWEP.EjectDelay = 1111111111
 
 SWEP.ShotgunReload = true
-SWEP.ShotgunReloadHook = function(swep, meow)
+-- SWEP.ShotgunReloadHook = function(swep, meow)
     -- if CLIENT then return end
-    local eles = swep:GetElements()
+    -- local eles = swep:GetElements()
     -- print("heyy!!")
     -- return false
-    if (eles["eft_rhino_speedloader"] and (swep:Clip1() == 0 or eles["eft_rsh12_fastreload"])) or swep.nosgreload then return false end 
+    -- if (eles["eft_rhino_speedloader"] and (swep:Clip1() == 0 or eles["eft_rsh12_fastreload"])) or swep.nosgreload then return false end 
     -- print(swep:GetValue("EFTSpeedloader"))
     -- if swep:GetValue("EFTSpeedloader") then return false end 
-    return true
+--     return true
+-- end
+
+function SWEP:GetShouldShotgunReload() -- for some weird assss reason hooking shotgunreload not work reliably
+    local eles = self:GetElements()
+    return !((eles["eft_rhino_speedloader"] and (self:Clip1() == 0 or eles["eft_rsh12_fastreload"])) or self.nosgreload)
 end
 
 SWEP.TriggerDelay = true
@@ -411,21 +417,22 @@ local shellin = { path .. "rhino_round_in1.ogg", path .. "rhino_round_in2.ogg", 
 local magcheck = {
     { s = randspin, t = 0 },
     { s = path .. "rhino_drum_releasebutton.ogg", t = 0.05 },
-    { s = path .. "rhino_drum_out.ogg", t = 4/24 },
-    { s = randspin, t = 35/24 },
-    { s = path .. "rhino_drum_in.ogg", t = 49/24 },
-    { s = randspin, t = 63/24 },
+    { s = path .. "rhino_drum_out.ogg", t = 6/26 },
+    { s = randspin, t = 35/26 },
+    { s = path .. "rhino_drum_in.ogg", t = 38/26 },
+    { s = randspin, t = 50/26 },
 }
 local look = {
     { s = randspin, t = 0.05 },
-    { s = randspin, t = 23/24 },
-    { s = randspin, t = 37/24 },
-    { s = randspin, t = 58/24 },
-    { s = randspin, t = 67/24 },
+    { s = randspin, t = 23/26 },
+    -- { s = randspin, t = 37/26 },
+    -- { s = randspin, t = 58/26 },
+    { s = randspin, t = 60/26 },
 }
 local cock = {
     { s = randspin, t = 0 },
-    { s = path .. "rhino_hammer_arm.ogg", t = 5/24 },
+    { s = path .. "rhino_hammer_arm.ogg", t = 5/26 },
+    { s = path .. "rhino_drum_releasebutton.ogg", t = 5/26 + 0.25 },
 }
 
 local sg_start1 = {
@@ -433,16 +440,18 @@ local sg_start1 = {
     { s = path .. "rhino_drum_releasebutton.ogg", t = 2/26 },
     { s = path .. "rhino_drum_out.ogg", t = 4/26 },
     { s = randspin, t = 21/26 },  
-    { s = shellout, t = 43/26 },
-    { s = shellout, t = 69/26 },
-    { s = shellout, t = 93/26 },
-    { s = shellout, t = 117/26 },
-    { s = shellout, t = 125/26 },
-    {shelleject = true, att = 2, t = 50/26},
-    {shelleject = true, att = 2, t = 75/26},
-    {shelleject = true, att = 2, t = 98/26},
-    {shelleject = true, att = 2, t = 129/26},
-    {shelleject = true, att = 2, t = 132/26},
+
+    { s = shellout, t = 42/26 - 0.15 },
+    { s = shellout, t = 72/26 - 0.15 },
+    { s = shellout, t = 99/26 - 0.15 },
+    { s = shellout, t = 133/26 - 0.15 },
+    { s = shellout, t = 163/26 - 0.15 },
+
+    {shelleject = true, att = 2, t = 42/26 + 0.2},
+    {shelleject = true, att = 2, t = 72/26 + 0.2},
+    {shelleject = true, att = 2, t = 99/26 + 0.2},
+    {shelleject = true, att = 2, t = 133/26 + 0.2},
+    {shelleject = true, att = 2, t = 163/26 + 0.2},
 }
 
 local sg_start0 = sg_start1
@@ -452,25 +461,25 @@ local sg_start4 = sg_start1
 local sg_start5 = sg_start1
 
 local sg_insert1 = {
-    { s = randspin, t = 0/28 },
-    { s = shellin, t = 14/28 },
+    { s = randspin, t = 0/26 },
+    { s = shellin, t = 12/26 },
 }
 local sg_insert2 = {
-    { s = shellin, t = 13/28 },
+    { s = shellin, t = 12/26 },
 }
 local sg_insert3 = {
-    { s = randspin, t = 0/28 },
-    { s = shellin, t = 13/28 },
+    { s = randspin, t = 0/26 },
+    { s = shellin, t = 12/26 },
 }
 local sg_insert4 = {
-    { s = shellin, t = 12/28 },
+    { s = shellin, t = 11/26 },
 }
 local sg_insert5 = {
-    { s = shellin, t = 12/28 },
+    { s = shellin, t = 11/26 },
 }
 local sg_end = {
     { s = randspin, t = 6/26 },
-    { s = path .. "rhino_drum_in.ogg", t = 6/26 },
+    { s = path .. "rhino_drum_in.ogg", t = 5/26 },
     { s = randspin, t = 22/26 },
 }
 
@@ -560,30 +569,27 @@ local ff_insert1 = {
     { s = shellin, t = 17/30 },
 }
 local ff_insert2 = {
-    { s = shellin, t = 16/30 },
+    { s = shellin, t = 6/30 },
 }
 local ff_insert3 = {
-    { s = randspin, t = 0/30 },
-    { s = shellin, t = 14/30 },
+    { s = shellin, t = 7/30  },
 }
 local ff_insert4 = {
-    { s = shellin, t = 13/30 },
+    { s = shellin, t = 7/30 },
 }
 local ff_insert5 = {
-    { s = shellin, t = 5/30 },
-    { s = randspin, t = 9/30 },
+    { s = shellin, t = 8/30 },
 }
 local ff_insert6 = {
     { s = shellin, t = 5/30 },
-    { s = randspin, t = 9/30 },
 }
 local ff_end1 = {
     { s = randspin, t = 3/26 },
-    { s = path .. "rhino_drum_in.ogg", t = 24/26 },
+    { s = path .. "rhino_drum_in.ogg", t = 20/26 },
     { s = randspin, t = 41/26 },
 }
-local ff_end5 = {
-    { s = path .. "rhino_drum_in.ogg", t = 6/26 },
+local ff_end6 = {
+    { s = path .. "rhino_drum_in.ogg", t = 6.5/26 },
     { s = randspin, t = 24/26 },
 }
 
@@ -622,6 +628,7 @@ local firesadry = {
     { s = path .. "rhino_hammer_release.ogg", t = 0 },
     { s = randspin, t = 0.25 },
     { s = path .. "rhino_hammer_arm.ogg", t = 0.25+5/24 },
+    { s = path .. "rhino_drum_releasebutton.ogg", t = 0.5+5/24 },
 }
 
 local enterbip = {
@@ -687,12 +694,12 @@ SWEP.Animations = {
     ["fire_dry__4"] = { Source = "fire_dry__3", EventTable = firesadry },
     ["fire_dry__5"] = { Source = "fire_dry__4", EventTable = firesadry },
 
-    ["cycle__0"] = { Source = "cock__5", EventTable = cock, Mult = 0.8 },
-    ["cycle__1"] = { Source = "cock__0", EventTable = cock, Mult = 0.8 },
-    ["cycle__2"] = { Source = "cock__1", EventTable = cock, Mult = 0.8 },
-    ["cycle__3"] = { Source = "cock__2", EventTable = cock, Mult = 0.8 },
-    ["cycle__4"] = { Source = "cock__3", EventTable = cock, Mult = 0.8 },
-    ["cycle__5"] = { Source = "cock__4", EventTable = cock, Mult = 0.8 },
+    ["cycle__0"] = { Source = "cock__5", EventTable = cock, Mult = 0.9 },
+    ["cycle__1"] = { Source = "cock__0", EventTable = cock, Mult = 0.9 },
+    ["cycle__2"] = { Source = "cock__1", EventTable = cock, Mult = 0.9 },
+    ["cycle__3"] = { Source = "cock__2", EventTable = cock, Mult = 0.9 },
+    ["cycle__4"] = { Source = "cock__3", EventTable = cock, Mult = 0.9 },
+    ["cycle__5"] = { Source = "cock__4", EventTable = cock, Mult = 0.9 },
 
 
     ["sg_reload_start1__0"] = { Source = "sg_reload_start1__0", EventTable = sg_start0 },
@@ -862,12 +869,12 @@ SWEP.Animations = {
     ["fistful_start6__3"] = { Source = "fistful_start__3", EventTable = ff_start6, NoMagSwap = true },
     ["fistful_start6__4"] = { Source = "fistful_start__4", EventTable = ff_start6, NoMagSwap = true },
     ["fistful_start6__5"] = { Source = "fistful_start__5", EventTable = ff_start6, NoMagSwap = true },
-    ["fistful_insert1"] = { Source = "fistful_insert1", EventTable = ff_insert1, NoMagSwap = true },
-    ["fistful_insert2"] = { Source = "fistful_insert2", EventTable = ff_insert2, NoMagSwap = true },
-    ["fistful_insert3"] = { Source = "fistful_insert3", EventTable = ff_insert3, NoMagSwap = true },
-    ["fistful_insert4"] = { Source = "fistful_insert4", EventTable = ff_insert4, NoMagSwap = true },
-    ["fistful_insert5"] = { Source = "fistful_insert5", EventTable = ff_insert5, NoMagSwap = true },
-    ["fistful_insert6"] = { Source = "fistful_insert6", EventTable = ff_insert6, NoMagSwap = true },
+    ["fistful_insert1"] = { Source = "fistful_insert1", EventTable = ff_insert1, NoMagSwap = true, Mult = 30/26 },
+    ["fistful_insert2"] = { Source = "fistful_insert2", EventTable = ff_insert2, NoMagSwap = true, Mult = 30/26 },
+    ["fistful_insert3"] = { Source = "fistful_insert3", EventTable = ff_insert3, NoMagSwap = true, Mult = 30/26 },
+    ["fistful_insert4"] = { Source = "fistful_insert4", EventTable = ff_insert4, NoMagSwap = true, Mult = 30/26 },
+    ["fistful_insert5"] = { Source = "fistful_insert5", EventTable = ff_insert5, NoMagSwap = true, Mult = 30/26 },
+    ["fistful_insert6"] = { Source = "fistful_insert6", EventTable = ff_insert6, NoMagSwap = true, Mult = 30/26 },
     ["fistful_end_r1"] = { Source = "fistful_end_r1", EventTable = ff_end1 },
     ["fistful_end_r2"] = { Source = "fistful_end_r2", EventTable = ff_end1 },
     ["fistful_end_r3"] = { Source = "fistful_end_r3", EventTable = ff_end1 },
@@ -978,7 +985,7 @@ SWEP.Hook_ModifyBodygroups = function(swep, data)
     local mdl = data.model
     
     local hasmag, hasloader = eles["eft_rhino_mag_std"], eles["eft_rhino_speedloader"]
-    if hasloader and swep:GetReloading() then mdl:SetBodygroup(3, 1) else mdl:SetBodygroup(3, 0) end
+    if hasloader and swep:GetReloading() and !swep:GetShouldShotgunReload() then mdl:SetBodygroup(3, 1) else mdl:SetBodygroup(3, 0) end
 
     local rc = swep:GetNWInt("EFTRevolverRoundCount", 6) or 6
     
@@ -1059,7 +1066,7 @@ SWEP.Attachments = {
     -- },
     {
         PrintName = "Custom slot",
-        Category = {"eft_custom_slot", "eft_custom_slot_rhino", "eft_custom_slot_rsh12"},
+        Category = {"eft_custom_slot", "eft_custom_slot_rhino", "eft_custom_slot_revolver"},
         Bone = "weapon",
         Pos = Vector(0, 15, -2),
         Ang = Angle(0, 90, 0),
